@@ -1,2 +1,3 @@
 # Themes
-A collection of themes for bootstrap.
+There are still a few things left to fix.
+
