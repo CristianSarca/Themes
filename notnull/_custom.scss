@@ -1,0 +1,85 @@
+html,
+body {
+    height: 100%;
+}
+
+//======BUTTONS======
+.btn {
+    border: $btn-border-size;
+}
+
+//======NAVBAR======
+.navbar {
+    border: $navbar-border-size;
+    box-shadow: $navbar-shadow;
+}
+
+//======NAVS======
+.nav-tabs {
+    a {
+        &:hover {
+            color: $nav-tabs-link-hover-color;
+        }
+    }
+}
+
+.nav-pills {
+    a {
+        &:hover {
+            color: $nav-pills-link-hover-color;
+        }
+    }
+}
+
+//======Pager======
+.pager {
+    li {
+        a {
+            color: $pager-color;
+            border: $pager-border-size;
+            &:hover {
+                color: $pager-hover-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+//======DROPDOWN======
+.dropdown-toggle:focus {
+    outline: 0;
+    color: $dropdown-toggle-focus-color;
+}
+
+//======FORMS======
+.form-control {
+    border: $form-border-size;
+    box-shadow: $form-box-shadow;
+}
+
+.has-warning,
+.has-error,
+.has-success {
+    box-shadow: $form-box-shadow;
+}
+
+//======WELLS======
+.well {
+    border: $well-border-size;
+    box-shadow: $well-box-shadow;
+}
+
+.thumbnail {
+    border: $thumbnail-border-size;
+    box-shadow: $thumbnail-box-shadow;
+}
+
+.alert {
+    border: $alert-border-size;
+}
+
+.label {
+    border-radius: $label-border-radius;
+    font-weight: $label-font-weight;
+}
+
