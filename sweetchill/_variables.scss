@@ -20,11 +20,11 @@ $white:                  #fff;
 $brand-default:         #212121 !default;
 $brand-secondary:       #37474F !default;
 
-$brand-primary:         #0097A7 !default;
-$brand-success:         #D81B60 !default;
-$brand-info:            #00BFA5 !default;
-$brand-warning:         #9C27B0 !default;
-$brand-danger:          #FB8C00 !default;
+$brand-primary:         #D81B60 !default;
+$brand-success:         #12d482 !default;  
+$brand-info:            #1b9ed8 !default;
+$brand-warning:         #b116ea !default;
+$brand-danger:          #ea3716 !default;
 
 
 //== Scaffolding
@@ -39,7 +39,7 @@ $text-color:            $white !default;
 //** Global textual link color.
 $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      $brand-success !default;
+$link-hover-color:      $brand-info !default;
 //** Link hover decoration.
 $link-hover-decoration: none !default;
 
@@ -252,7 +252,7 @@ $dropdown-border:                transparent !default;
 //** Dropdown menu `border-color` **for IE8**.
 $dropdown-fallback-border:       transparent !default;
 //** Divider color for between dropdown items.
-$dropdown-divider-bg:            $brand-success !default;
+$dropdown-divider-bg:            $brand-secondary !default;
 
 //** Dropdown link text color.
 $dropdown-link-color:            $white !default;
@@ -407,6 +407,10 @@ $navbar-default-toggle-hover-bg:           $brand-primary !default;
 $navbar-default-toggle-icon-bar-bg:        $white !default;
 $navbar-default-toggle-border-color:       transparent !default;
 
+// Navbar Inverse toggle
+$navbar-inverse-toggle-hover-bg:           $brand-info !default;
+$navbar-inverse-toggle-icon-bar-bg:        $white !default;
+$navbar-inverse-toggle-border-color:       transparent !default;
 
 //=== Inverted navbar
 // Reset inverted navbar basics
@@ -417,15 +421,15 @@ $navbar-inverse-border:                     transparent !default;
 // Inverted navbar links
 $navbar-inverse-link-color:                 $white !default;
 $navbar-inverse-link-hover-color:           $white !default;
-$navbar-inverse-link-hover-bg:              $brand-success !default;
+$navbar-inverse-link-hover-bg:              $brand-info !default;
 $navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
-$navbar-inverse-link-active-bg:             $brand-success !default;
+$navbar-inverse-link-active-bg:             $brand-info !default;
 $navbar-inverse-link-disabled-color:        #444 !default;
 $navbar-inverse-link-disabled-bg:           transparent !default;
 
 // Inverted navbar brand label
 $navbar-inverse-brand-color:                $navbar-inverse-link-color !default;
-$navbar-inverse-brand-hover-color:          $white !default;
+$navbar-inverse-brand-hover-color:          $brand-info !default;
 $navbar-inverse-brand-hover-bg:             transparent !default;
 
 // Inverted navbar toggle
@@ -440,7 +444,7 @@ $navbar-inverse-toggle-border-color:        transparent !default;
 
 //=== Shared nav styles
 $nav-link-padding:                          10px 15px !default;
-$nav-link-hover-bg:                         $brand-success !default;
+$nav-link-hover-bg:                         $brand-primary !default;
 
 $nav-disabled-link-color:                   $gray-light !default;
 $nav-disabled-link-hover-color:             $gray-light !default;
@@ -450,7 +454,7 @@ $nav-tabs-border-color:                     transparent !default;
 
 $nav-tabs-link-hover-border-color:          transparent !default;
 
-$nav-tabs-active-link-hover-bg:             $brand-success !default;
+$nav-tabs-active-link-hover-bg:             $brand-primary !default;
 $nav-tabs-active-link-hover-color:          $white !default;
 $nav-tabs-active-link-hover-border-color:   transparent !default;
 
@@ -463,7 +467,7 @@ $nav-tabs-border-radius:                    $btn-border-radius-base;
 
 //== Pills
 $nav-pills-border-radius:                   $btn-border-radius-base !default;
-$nav-pills-active-link-hover-bg:            $brand-success !default;
+$nav-pills-active-link-hover-bg:            $brand-primary !default;
 $nav-pills-active-link-hover-color:         $component-active-color !default;
 $nav-pills-link-color:                      $brand-primary;
 $nav-pills-link-hover-color:                $white;
@@ -710,11 +714,11 @@ $list-group-border-size:        none;
 $list-group-border-radius:      $btn-border-radius-base !default;
 
 //** Background color of single list items on hover
-$list-group-hover-bg:           $brand-success !default;
+$list-group-hover-bg:           $brand-info !default;
 //** Text color of active list items
 $list-group-active-color:       $white !default;
 //** Background color of active list items
-$list-group-active-bg:          $brand-success !default;
+$list-group-active-bg:          $brand-info !default;
 //** Border color of active list elements
 $list-group-active-border:      transparent !default;
 //** Text color for content within active list items
