@@ -18,14 +18,14 @@ $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 $white:                  #e2e0e5;
 
-$brand-default:         #78519a !default;
-$brand-secondary:       #271b38 !default;
+$brand-default:         #233133 !default;
+$brand-secondary:       #464b4a !default;
 
-$brand-primary:         #f46093  !default;
+$brand-primary:         #d14953  !default;
 $brand-success:         #38bc9d !default;  
 $brand-info:            #e3d8c6 !default;
-$brand-warning:         #d9b244 !default;
-$brand-danger:          #dd5238 !default;
+$brand-warning:         #ffaf30 !default;
+$brand-danger:          #ff493a !default;
 
 
 //== Scaffolding
@@ -38,7 +38,7 @@ $body-bg:               $brand-secondary !default;
 $text-color:            $brand-info !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            $brand-success !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      $brand-info !default;
 //** Link hover decoration.
@@ -164,7 +164,7 @@ $btn-primary-color:              $white !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             transparent !default;
 
-$btn-success-color:              $white !default;
+$btn-success-color:              darken($brand-success, 40%) !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             transparent !default;
 
@@ -172,11 +172,11 @@ $btn-info-color:                 $brand-default !default;
 $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                transparent !default;
 
-$btn-warning-color:              $white !default;
+$btn-warning-color:              darken($brand-warning, 40%) !default;
 $btn-warning-bg:                 $brand-warning !default;
 $btn-warning-border:             transparent !default;
 
-$btn-danger-color:               $white !default;
+$btn-danger-color:               darken($brand-danger, 40%) !default;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              transparent !default;
 
@@ -836,7 +836,7 @@ $breadcrumb-bg:                 $brand-default !default;
 //** Breadcrumb text color
 $breadcrumb-color:              $brand-info !default;
 //** Text color of current page in the breadcrumb
-$breadcrumb-active-color:       darken($brand-default, 30%) !default;
+$breadcrumb-active-color:       lighten($brand-primary, 20%) !default;
 //** Textual separator for between breadcrumb elements
 $breadcrumb-separator:          "/" !default;
 
