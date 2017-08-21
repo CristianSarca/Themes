@@ -1,0 +1,173 @@
+html,
+body {
+    height: 100%;
+}
+
+//======BUTTONS======
+.btn {
+    border: $btn-border-size;
+}
+
+//======NAVBAR======
+.navbar {
+    border: $navbar-border-size;
+    box-shadow: $navbar-shadow;
+}
+
+.navbar-toggle {
+    border-radius: $navbar-toggle-border-radius;
+}
+
+.navbar-inverse {
+    .navbar-toggle:hover .icon-bar {
+        background: $navbar-inverse-toggle-icon-bar-hover-bg;
+    }
+    .dropdown-menu>li>a {
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $brand-default;
+            background-color: $dropdown-link-hover-inverse-bg;
+        }
+    }
+    // Active state
+    .dropdown-menu>.active>a {
+        &,
+        &:hover,
+        &:focus {
+            color: $dropdown-link-active-color;
+            text-decoration: none;
+            outline: 0;
+            background-color: $dropdown-link-active-bg;
+        }
+    }
+}
+
+//======NAVS======
+.nav-tabs>li>a {
+    border-radius: $btn-border-radius-base;
+    border: none;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $white;
+    }
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	border: $nav-tabs-border-size;
+}
+
+.nav-pills {
+    a {
+        &:hover {
+            color: $nav-pills-link-hover-color;
+        }
+    }
+}
+
+//======Pager======
+.pager {
+    li {
+        a {
+            color: $pager-color;
+            border: $pager-border-size;
+            &:hover {
+                color: $pager-hover-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.pagination {
+    >li {
+        display: inline; // Remove list-style and block-level defaults
+        >a,
+        >span {
+            border: $pagination-border-size;
+        }
+        &:first-child {
+            >a,
+            >span {
+                margin-left: 0;
+                @include border-left-radius($btn-border-radius-base);
+            }
+        }
+        &:last-child {
+            >a,
+            >span {
+                @include border-right-radius($btn-border-radius-base);
+            }
+        }
+    }
+}
+
+//======DROPDOWN======
+.dropdown-toggle:focus {
+    outline: 0;
+    color: $dropdown-toggle-focus-color;
+}
+
+.dropdown-menu {
+    border: $dropdown-border-size;
+}
+
+//======FORMS======
+.form-control {
+    border: $form-border-size;
+    box-shadow: $form-box-shadow;
+}
+
+.has-warning,
+.has-error,
+.has-success {
+    box-shadow: $form-box-shadow;
+}
+
+//======WELLS======
+.well {
+    border: $well-border-size;
+    box-shadow: $well-box-shadow;
+    color: $well-color;
+}
+
+.thumbnail {
+    border: $thumbnail-border-size;
+    box-shadow: $thumbnail-box-shadow;
+}
+
+.alert {
+    border: $alert-border-size;
+}
+
+.label {
+    border-radius: $label-border-radius;
+    font-weight: $label-font-weight;
+}
+
+.list-group-item {
+    border: $list-group-border-size;
+    color: $list-group-color;
+}
+
+.breadcrumb {
+    border-radius: $breadcrumb-border-radius;
+}
+
+.panel {
+    border: $panel-border-size;
+    color: $panel-color;
+}
+
+.panel-footer {
+    color: $panel-footer-color;
+}
+
+table {
+    color: $white;
+}
+
+.navbar-brand {
+    font-family: "Acme";
+}
