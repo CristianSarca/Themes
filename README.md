@@ -10,9 +10,8 @@
 
 ## Generation II
 #### CompatibleTheme aka CompTheme
-###### Colors: Blue, Red, Green, Orange, Purple, Yellow, Teal, Pink, Gray.
+###### **Colors:** Blue, Red, Green, Orange, Purple, Yellow, Teal, Pink, Gray.
 
 ### To Do
-- create bootstrap.min.css for all themes
-- add comment sections to selectors in all "custom.scss" files from Generation I themes.
-
+- create ```bootstrap.min.css``` for all themes
+- add comment sections to selectors in all ```_custom.scss``` files from Generation I themes.
