@@ -1,0 +1,236 @@
+/*=============================================================
+"Compatible Theme" aka "CompTheme"
+----------------------------------
+Author: Cristian Sarca
+GitHub: cristiansarca.github.io
+=============================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat'); //navbar-brand's font-family.
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+//***Alomost everything can be edited from the variables file, here you can add more things that you want to customize if necessary.***
+//======GLOBAL======
+html,
+body {
+    height: 100%;
+}
+
+//======BUTTONS======
+.btn {
+    border: $btn-border-size; //is set to "none", change it in variables if you want a border.
+}
+
+//======NAVBAR======
+.navbar {
+    border: $navbar-border-size; //is set to "none", change it in variables if you want a border.
+    box-shadow: $navbar-shadow; //change the value in variables if you want a shadow or not.
+    .navbar-brand {
+        font-family: $navbar-brand-font-family; //change it in variables and up here.
+        font-size: $navbar-brand-font-size; //change the size in variables.
+        font-weight: bold; 
+    }
+    .nav {
+        //Delete/Comment this if you don't want bold & uppercase font on navbar links.
+        >li>a {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.navbar-toggle {
+    border-radius: $navbar-toggle-border-radius; //mobile menu button border radius, change it in variables.
+}
+
+.navbar-default {
+    .navbar-toggle:hover .icon-bar {
+        background: $navbar-default-toggle-icon-bar-hover-bg;
+    }
+}
+
+//Added this to have some control over what happens to the navbar when it's inversed.
+.navbar-inverse {
+    .navbar-toggle:hover .icon-bar {
+        background: $navbar-inverse-toggle-icon-bar-hover-bg;
+    }
+    .dropdown-menu>li>a {
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $dropdown-link-hover-inverse-color;
+            background-color: $dropdown-link-hover-inverse-bg;
+        }
+    }
+    .dropdown-menu>.active>a {
+        &,
+        &:hover,
+        &:focus {
+            color: $dropdown-link-active-color;
+            text-decoration: none;
+            outline: 0;
+            background-color: $dropdown-link-active-bg;
+        }
+    }
+}
+
+//======NAVS======
+.nav-tabs>li>a {
+    border-radius: $btn-border-radius-base;
+    border: none;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $white;
+    }
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    border: $nav-tabs-border-size;
+}
+
+.nav-pills {
+    a {
+        &:hover {
+            color: $nav-pills-link-hover-color;
+        }
+    }
+}
+
+//======Pager======
+.pager {
+    li {
+        a {
+            color: $pager-color;
+            border: $pager-border-size;
+            &:hover {
+                color: $pager-hover-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+//======PAGINATION======
+.pagination {
+    >li {
+        display: inline;
+        >a,
+        >span {
+            border: $pagination-border-size;
+        }
+        &:first-child {
+            >a,
+            >span {
+                margin-left: 0;
+                @include border-left-radius($btn-border-radius-base);
+            }
+        }
+        &:last-child {
+            >a,
+            >span {
+                @include border-right-radius($btn-border-radius-base);
+            }
+        }
+    }
+}
+
+//======DROPDOWN======
+.dropdown-toggle:focus {
+    outline: 0;
+    color: $dropdown-toggle-focus-color;
+}
+
+.dropdown-menu {
+    border: $dropdown-border-size;
+}
+
+//======FORMS======
+.form-control {
+//    border: $form-border-size;
+    box-shadow: $form-box-shadow;
+}
+
+.has-warning,
+.has-error,
+.has-success {
+    box-shadow: $form-box-shadow;
+}
+
+.has-warning  {
+    .form-control {border-color: $brand-warning}
+    .control-label {color: $brand-warning}
+}
+.has-error {
+    .form-control {border-color: $brand-danger}
+    .control-label {color: $brand-danger}
+}
+
+.has-success {
+    .form-control {border-color: $brand-success}
+    .control-label {color: $brand-success}
+}
+
+//======WELLS======
+.well {
+    border: $well-border-size;
+    box-shadow: $well-box-shadow;
+    color: $well-color;
+}
+
+//======THUMBNAIL======
+.thumbnail {
+    border: $thumbnail-border-size;
+    box-shadow: $thumbnail-box-shadow;
+}
+
+//======ALERT======
+.alert {
+    border: $alert-border-size;
+    .alert-link {
+        color: $alert-link-color;
+    }
+}
+
+//======LABEL======
+.label {
+    border-radius: $label-border-radius;
+    font-weight: $label-font-weight;
+}
+
+//======LIST GROUP======
+.list-group-item {
+    border: $list-group-border-size;
+    color: $list-group-color;
+}
+
+//======BREADCRUMB======
+.breadcrumb {
+    border-radius: $breadcrumb-border-radius;
+    a {
+        color: $breadcrumb-link-color;
+        &:hover {
+            color: $breadcrumb-link-hover-color;
+        }
+    }
+}
+
+//======PANEL======
+.panel {
+    //border: $panel-border-size;
+    color: $panel-color;
+}
+
+.panel-footer {
+    color: $panel-footer-color;
+}
+
+//======TABLE======
+table {
+    color: $table-color;
+}
+
+//======PROGRESS BAR======
+.progress {
+    height: $progress-bar-height;
+}
