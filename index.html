@@ -27,12 +27,23 @@
             margin-top: 2em;
         }
         
-        #header h1 {
-            font-size: 4em;
+        #hero {
+            background: url(hero.jpg) fixed no-repeat center center /cover;
+            height: 100vh;
         }
         
-        #header {
-            padding-top: 100px;
+        #hero h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px black;
+            color: #fff;
+        }
+        
+        #hero h2 {
+            text-shadow: 1px 1px black;
+        }
+        
+        #hero .container {
+            padding-top: 160px;
         }
     </style>
 </head>
@@ -44,14 +55,14 @@
     <main>
         <nav class="navbar navbar-fixed-top navbar-inverse">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-content">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-                    <a class="navbar-brand" href="#">NotNull Solutions</a>
+                    <a class="navbar-brand" href="#">CompTheme</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -64,142 +75,15 @@
             </div>
         </nav>
 
-
-        <section id="header">
+        <section id="hero">
             <div class="container">
                 <h1 class="text-center">Your Bootstrap theme Solution!</h1>
-                <br>
-                <hr>
-                <h3 class="text-primary">Generation I</h3>
-                <hr>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="well">
-                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> NotNull Theme</h3>
-                            <p>Version: 1.0.0</p>
-                            <a class="btn btn-primary" href="notnull/index.html">Preview</a>
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-default">Download</a>
-                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="./notnull/css/bootstrap.css">bootstrap.css</a></li>
-                                    <li><a href="#">bootstrap.min.css</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="./notnull/scss/_custom.scss">_custom.scss</a></li>
-                                    <li><a href="./notnull/scss/_variables.scss">_variables.scss</a></li>
-                                </ul>
-                            </div>
-                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="well">
-                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> SweetChill Theme</h3>
-
-                            <p>Version: 1.0.0</p>
-                            <a class="btn btn-primary" href="./sweetchill/index.html">Preview</a>
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-default">Download</a>
-                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="./sweetchill/css/bootstrap.css">bootstrap.css</a></li>
-                                    <li><a href="#">bootstrap.min.css</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="./sweetchill/scss/_custom.scss">_custom.scss</a></li>
-                                    <li><a href="./sweetchill/scss/_variables.scss">_variables.scss</a></li>
-                                </ul>
-                            </div>
-                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="well">
-                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> SimplisticLove Theme</h3>
-
-                            <p>Version: 1.0.0</p>
-                            <a class="btn btn-primary" href="./simplisticlove/index.html">Preview</a>
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-default">Download</a>
-                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="./simplisticlove/css/bootstrap.css">bootstrap.css</a></li>
-                                    <li><a href="#">bootstrap.min.css</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="./simplisticlove/scss/_custom.scss">_custom.scss</a></li>
-                                    <li><a href="./simplisticlove/scss/_variables.scss">_variables.scss</a></li>
-                                </ul>
-                            </div>
-                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="well">
-                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> EasyGoing Theme</h3>
-
-                            <p>Version: 1.0.0</p>
-                            <a class="btn btn-primary" href="./easygoing/index.html">Preview</a>
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-default">Download</a>
-                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="./easygoing/css/bootstrap.css">bootstrap.css</a></li>
-                                    <li><a href="#">bootstrap.min.css</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="./easygoing/scss/_custom.scss">_custom.scss</a></li>
-                                    <li><a href="./easygoing/scss/_variables.scss">_variables.scss</a></li>
-                                </ul>
-                            </div>
-                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="well">
-                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> SunFall Theme</h3>
-
-                            <p>Version: 1.0.0</p>
-                            <a class="btn btn-primary" href="./sunfall/index.html">Preview</a>
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-default">Download</a>
-                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="./sunfall/css/bootstrap.css">bootstrap.css</a></li>
-                                    <li><a href="#">bootstrap.min.css</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="./sunfall/scss/_custom.scss">_custom.scss</a></li>
-                                    <li><a href="./sunfall/scss/_variables.scss">_variables.scss</a></li>
-                                </ul>
-                            </div>
-                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="well">
-                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> WestKid Theme</h3>
-
-                            <p>Version: 1.0.0</p>
-                            <a class="btn btn-primary" href="./westkid/index.html">Preview</a>
-                            <div class="btn-group">
-                                <a href="#" class="btn btn-default">Download</a>
-                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="./westkid/css/bootstrap.css">bootstrap.css</a></li>
-                                    <li><a href="#">bootstrap.min.css</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="./westkid/scss/_custom.scss">_custom.scss</a></li>
-                                    <li><a href="./westkid/scss/_variables.scss">_variables.scss</a></li>
-                                </ul>
-                            </div>
-                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!--            Generation II-->
+                <h2 class="text-center text-primary">Bootstrap 4 themes coming soon!</h2>
+            </div>
+        </section>
+        <section id="content">
+            <div class="container">
+                <!--Generation II-->
                 <h3 class="text-primary">Generation II</h3>
                 <hr>
                 <div class="row">
@@ -391,6 +275,135 @@
                         </div>
                     </div>
                     <!--                =================-->
+                </div>
+                <!--Generation I-->
+                <h3 class="text-primary">Generation I</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> NotNull Theme</h3>
+                            <p>Version: 1.0.0</p>
+                            <a class="btn btn-primary" href="notnull/index.html">Preview</a>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default">Download</a>
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./notnull/css/bootstrap.css">bootstrap.css</a></li>
+                                    <li><a href="#">bootstrap.min.css</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="./notnull/scss/_custom.scss">_custom.scss</a></li>
+                                    <li><a href="./notnull/scss/_variables.scss">_variables.scss</a></li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> SweetChill Theme</h3>
+
+                            <p>Version: 1.0.0</p>
+                            <a class="btn btn-primary" href="./sweetchill/index.html">Preview</a>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default">Download</a>
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./sweetchill/css/bootstrap.css">bootstrap.css</a></li>
+                                    <li><a href="#">bootstrap.min.css</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="./sweetchill/scss/_custom.scss">_custom.scss</a></li>
+                                    <li><a href="./sweetchill/scss/_variables.scss">_variables.scss</a></li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> SimplisticLove Theme</h3>
+
+                            <p>Version: 1.0.0</p>
+                            <a class="btn btn-primary" href="./simplisticlove/index.html">Preview</a>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default">Download</a>
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./simplisticlove/css/bootstrap.css">bootstrap.css</a></li>
+                                    <li><a href="#">bootstrap.min.css</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="./simplisticlove/scss/_custom.scss">_custom.scss</a></li>
+                                    <li><a href="./simplisticlove/scss/_variables.scss">_variables.scss</a></li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> EasyGoing Theme</h3>
+
+                            <p>Version: 1.0.0</p>
+                            <a class="btn btn-primary" href="./easygoing/index.html">Preview</a>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default">Download</a>
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./easygoing/css/bootstrap.css">bootstrap.css</a></li>
+                                    <li><a href="#">bootstrap.min.css</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="./easygoing/scss/_custom.scss">_custom.scss</a></li>
+                                    <li><a href="./easygoing/scss/_variables.scss">_variables.scss</a></li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> SunFall Theme</h3>
+
+                            <p>Version: 1.0.0</p>
+                            <a class="btn btn-primary" href="./sunfall/index.html">Preview</a>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default">Download</a>
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./sunfall/css/bootstrap.css">bootstrap.css</a></li>
+                                    <li><a href="#">bootstrap.min.css</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="./sunfall/scss/_custom.scss">_custom.scss</a></li>
+                                    <li><a href="./sunfall/scss/_variables.scss">_variables.scss</a></li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> WestKid Theme</h3>
+
+                            <p>Version: 1.0.0</p>
+                            <a class="btn btn-primary" href="./westkid/index.html">Preview</a>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default">Download</a>
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./westkid/css/bootstrap.css">bootstrap.css</a></li>
+                                    <li><a href="#">bootstrap.min.css</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="./westkid/scss/_custom.scss">_custom.scss</a></li>
+                                    <li><a href="./westkid/scss/_variables.scss">_variables.scss</a></li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-danger" href="https://github.com/CristianSarca/Themes"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
